@@ -1,74 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #1D1F21; /* deep navy blue */
-    color: #EAEAEA; /* light gray for text */
-    padding: 0;
+/* Reset default browser styling */
+* {
     margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.container {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 0 20px;
-}
-
-h1, h2 {
-    font-family: 'Montserrat', sans-serif;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 50px;
-    color: #FFFFFF; /* sharp white for primary headings */
-}
-
-h2 {
-    font-size: 2em;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    color: #FFFFFF; /* sharp white for secondary headings */
-}
-
-p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-a {
-    color: #B0B3B8; /* slightly darker gray for links */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #FFFFFF; /* sharp white for hover effect */
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #FFFFFF; /* sharp white for the CTA button background */
-    color: #1D1F21; /* deep navy blue for the CTA button text */
-    padding: 10px 20px;
-    font-size: 1.5em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* or your preferred font */
+  }
+  
+  /* Container for all content */
+  .container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Style for main heading */
+  h1 {
     text-align: center;
-    margin-top: 30px;
-}
-
-.cta-button:hover {
-    background-color: #B0B3B8; /* slightly darker gray for hover effect on button */
-}
-
-footer {
-    margin-top: 50px;
-    font-size: 1.2em;
-}
-
-footer a {
+    background-color: #ffffff; /* White background for the title */
+    color: #0a2a43; /* Dark text color */
+    padding: 20px 0; /* Padding around the title */
+  }
+  
+  /* Style for each section */
+  section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px; /* Padding for small screens, adjust as necessary */
+  }
+  
+  /* Style for each heading within sections */
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for paragraphs within sections */
+  section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Background colors for each section, alternating based on your primary and secondary colors */
+  section:nth-child(odd) {
+    background-color: #0a2a43; /* Primary color */
+    color: #ffffff; /* White text for contrast */
+  }
+  
+  section:nth-child(even) {
+    background-color: #EFEFEF; /* Secondary color */
+    color: #333333; /* Dark text for contrast */
+  }
+  
+  /* Style for Call to Action button */
+  .cta-button {
+    background-color: #0a2a43; /* Primary color */
+    color: #ffffff; /* White text */
+    padding: 15px 30px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #092235; /* Darken the button a bit when hovering */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333333; /* Dark footer background */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer a {
+    color: #ffffff; /* White text links */
+    text-decoration: none;
     margin: 0 10px;
-}
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
