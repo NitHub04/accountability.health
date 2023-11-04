@@ -9,16 +9,12 @@
     width: 100%;
     height: 100%;
     scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: Arial, sans-serif; /* or your preferred font */
+    font-family: 'Montserrat', sans-serif; /* Montserrat font */
   }
   
   /* Container for all content */
   .container {
     width: 100%;
-    height: 100%;
     overflow: auto;
   }
   
@@ -32,7 +28,7 @@
   
   /* Style for each section */
   section {
-    height: 100vh;
+    min-height: 90vh; /* Adjusted for partial visibility */
     display: flex;
     flex-direction: column;
     justify-content: center;
